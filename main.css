@@ -1,0 +1,102 @@
+#html-body {
+    font-size: 16px;
+}
+#header {
+    position: sticky;
+    top: 0;
+    height: 80px;
+    box-shadow: 0 3px 10px #2228;
+    background-size: contain;
+    background-color: #fff;
+    background-image: url(http://scp-wiki.wikidot.com/local--files/art:goc-logos/High-Command.png);
+    background-repeat: no-repeat;
+    background-position-x: 32px;
+}
+#header > h1 > a > span,
+#header > h2 > span {
+    display: none;
+}
+#header > h1 > a {
+    margin-left: 128px;
+}
+#header > h1 > a::before {
+    content: "二次元对应部";
+}
+#header > h2::before {
+    content: "来自全球超自然联盟最高指挥部";
+    margin: 128px;
+}
+#top-bar {
+    height: 100%;
+    width: 50%;
+    left: 25%;
+    right: unset;
+}
+.top-bar {
+    height: 100%;
+}
+#top-bar ul {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+#top-bar li a {
+    display: flex;
+    align-items: center;
+    height: calc(100% - 2px);
+    font-size: 16px;
+}
+#top-bar li ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+#top-bar a:hover {
+    text-decoration: unset;
+}
+.mobile-top-bar {
+    display: none;
+}
+#side-bar {
+    float: unset;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    bottom: 0;
+    width: 256px;
+    box-shadow: 1px 0 5px #2228;
+    background-color: #fff;
+}
+#main-content {
+    --left: calc(50% - min(40%, 640px) + 256px);
+    box-sizing: border-box;
+    margin-left: var(--left);
+    padding-right: 32px;
+    width: calc(min(80%, 1280px) - var(--left) / 2);
+    box-shadow: 0 0 5px #2228;
+}
+#footer {
+    box-shadow: 0 -1px 3px #222;
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+}
+#footer .options {
+    float: unset;
+}
+#license-area {
+    position: relative;
+    background-color: #fff;
+}
+
+a {
+    background-image: linear-gradient(75deg, #00f 0%, #00f 50%, #fff 50%, #fff 100%);
+    background-size: 300% 100%;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    transition: .5s all;
+    text-decoration: unset;
+}
+a:hover {
+    background-position: 0%;
+    color: #fff;
+}
